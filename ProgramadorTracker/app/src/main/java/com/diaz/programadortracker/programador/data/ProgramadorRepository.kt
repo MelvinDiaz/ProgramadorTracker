@@ -6,4 +6,8 @@ class ProgramadorRepository() {
     fun addProgramador(programador: Programador) {
         programadores.add(programador)
     }
+
+    fun getProgramadorById(programadorId: Int): Programador{
+        return programadores.find { it.id == programadorId }!!
+    }
 }

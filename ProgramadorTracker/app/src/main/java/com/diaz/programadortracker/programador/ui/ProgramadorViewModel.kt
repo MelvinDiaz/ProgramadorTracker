@@ -55,6 +55,10 @@ class ProgramadorViewModel(
         
     }
 
+    fun getProgramador(id: Int): Programador {
+        return repository.getProgramadorById(id)
+    }
+
     private fun setLoading(isLoading: Boolean) {
         _isLoading.value = isLoading
     }
